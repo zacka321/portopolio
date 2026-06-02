@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Resume</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- HERO SECTION + FOTO PROFIL -->
+    <header class="bg-gradient-to-r py-20 px-4 text-white shadow-lg relative overflow-hidden" style="background-color: #1e293b;">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 relative z-10">
+            <!-- Foto Profil -->
+            <div class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-blue-500 overflow-hidden shadow-2xl bg-gray-700 flex-shrink-0">
+                <!-- Ganti src di bawah ini dengan path foto Anda sendiri (misal: img/foto-saya.jpg) -->
+                <img src="profile.jpeg" alt="Foto Profil" class="w-full h-full object-cover">
+            </div>
+            <!-- Biodata Singkat -->
+            <div class="text-center md:text-left">
+                <span class="bg-blue-600 text-xs uppercase tracking-widest font-semibold px-3 py-1 rounded-full text-white">Full Stack Developer</span>
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl mt-3 mb-2">Ahmad Zakaria</h1>
+                <p class="text-xl text-gray-300 max-w-2xl mb-6">Pengembang web berpengalaman dalam membangun aplikasi responsif, sistem manajemen instansi, e-commerce, dan solusi digital kustom.</p>
+                <!-- Kontak Singkat -->
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-300">
+                    <span class="flex items-center gap-1"><i data-lucide="mail" class="w-4 h-4 text-blue-400"></i> b4nk.zack@gmai.com</span>
+                    <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i> Bogor, Indonesia</span>
+                    <span class="flex items-center gap-1"><i data-lucide="globe" class="w-4 h-4 text-blue-400"></i> www.webanda.com</span>
+                </div>
+            </div>
+        </div>
+        <!-- Dekorasi Background -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-900 rounded-full filter blur-3xl opacity-20 -mr-20 -mt-20"></div>
+    <!-- Tambahkan ini di bawah baris kontak <div class="flex flex-wrap ..."> -->
+
+      </header>
+
+    <!-- RESUME SECTION (PENGALAMAN, PENDIDIKAN, KURSUS) -->
+    <section class="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-12 border-b border-gray-200">
+        
+        <!-- Kolom Kiri: Pengalaman Kerja (Mengambil 2 Kolom di Layar Lebar) -->
+        <div class="lg:col-span-2">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                <i data-lucide="briefcase" class="text-blue-600"></i> Pengalaman Kerja
+            </h2>
+            <div class="space-y-8 relative before:absolute before:inset-0 before:right-auto before:left-3.5 before:w-0.5 before:bg-gray-200">
+                
+                <!-- Pengalaman 1 -->
+                <div class="relative pl-10 group">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow group-hover:bg-blue-500 transition-colors"></div>
+                    <span class="text-sm font-semibold text-blue-600">2017 - Sekarang</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-1">Senior Web Developer</h3>
+                    <p class="text-sm font-medium text-gray-500">PT. Immortal Cosmedika Indonesia</p>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Bertanggung jawab penuh dalam merancang arsitektur database, integrasi API, dan mengembangkan frontend responsif untuk klien.</p>
+                </div>
+
+                <!-- Pengalaman 2 -->
+                <div class="relative pl-10 group">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow group-hover:bg-blue-500 transition-colors"></div>
+                    <span class="text-sm font-semibold text-blue-600">2016 - 2017</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-1">IT & Full-Stack Programmer</h3>
+                    <p class="text-sm font-medium text-gray-500">IT Security Concord Solutions</p>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Mengembangkan dan mengelola website berbasis PHP dan Javascript, mengoptimalkan query backend, serta melakukan deployment ke server produksi.</p>
+                </div>
+
+                <!-- Pengalaman 3 -->
+                <div class="relative pl-10 group">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow group-hover:bg-blue-500 transition-colors"></div>
+                    <span class="text-sm font-semibold text-blue-600">2014 - 2016</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-1">IT & Full-Stack Programmer</h3>
+                    <p class="text-sm font-medium text-gray-500">PT.Cloudwings (Arab Saudi)</p>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Mengembangkan dan mengelola lebih dari 10 proyek website berbasis Prestashop dan Javascript, mengoptimalkan query backend, serta melakukan deployment ke server produksi.</p>
+                </div>
+
+                <!-- Pengalaman 4 -->
+                <div class="relative pl-10 group">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow group-hover:bg-blue-500 transition-colors"></div>
+                    <span class="text-sm font-semibold text-blue-600">2011 - 2014</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-1">Staff IT</h3>
+                    <p class="text-sm font-medium text-gray-500">PT.Sutrakabel Inti Mandiri</p>
+                    <p class="text-gray-600 mt-2 text-sm leading-relaxed">Mengembangkan Aplikasi ERP dan Website Perusahaan</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Kolom Kanan: Pendidikan & Kursus (1 Kolom) -->
+        <div class="space-y-12">
+            <!-- Pendidikan -->
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                    <i data-lucide="graduation-cap" class="text-emerald-600"></i> Pendidikan
+                </h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">2008 - 2011</span>
+                        <h3 class="font-bold text-gray-900 mt-2 text-base">D3 Management Informatika</h3>
+                        <p class="text-sm text-gray-500">Bina Sarana Informatika</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">2005 - 2008</span>
+                        <h3 class="font-bold text-gray-900 mt-2 text-base">SMK NEGERI 1 Cibinong Rekayasa Perangkat Lunak</h3>
+                        <p class="text-sm text-gray-500">SMK Negeri </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kursus & Sertifikasi -->
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                    <i data-lucide="award" class="text-purple-600"></i> Kursus & Sertifikasi
+                </h2>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 bg-purple-50 text-purple-600 rounded-lg mt-0.5"><i data-lucide="check-circle-2" class="w-4 h-4"></i></div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 text-sm">Full-Stack Web Development Bootcamp</h4>
+                            <p class="text-xs text-gray-500">Udemy / Dicoding — 2022</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 bg-purple-50 text-purple-600 rounded-lg mt-0.5"><i data-lucide="check-circle-2" class="w-4 h-4"></i></div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 text-sm">React & Reduct Mobile applications</h4>
+                            <p class="text-xs text-gray-500">Udemy — 2021</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 bg-purple-50 text-purple-600 rounded-lg mt-0.5"><i data-lucide="check-circle-2" class="w-4 h-4"></i></div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 text-sm">Tokopedia DevCamp Start </h4>
+                            <p class="text-xs text-gray-500">Tokopedia — 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PORTFOLIO CATEGORIES SECTION -->
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Kategori Project</h2>
+            <p class="text-gray-600">Pilih kategori di bawah ini untuk melihat detail *project* yang pernah dibuat.</p>
+        </div>
+
+        <!-- 8 Categories Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            
+            <!-- 1. Pendidikan -->
+            <button onclick="openModal('pendidikan')" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1 text-center group">
+                <div class="p-4 bg-blue-50 text-blue-600 rounded-full mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <i data-lucide="book-open" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Pendidikan</h3>
+                <p class="text-xs text-gray-500 mt-1">Sekolah, Pesantren & Perpus</p>
+            </button>
+
+            <!-- 2. Industri & Manufaktur -->
+            <button onclick="openModal('industri')" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1 text-center group">
+                <div class="p-4 bg-amber-50 text-amber-600 rounded-full mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                    <i data-lucide="factory" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Industri & Manufaktur</h3>
+                <p class="text-xs text-gray-500 mt-1">Kabel, Karoseri & Pabrik</p>
+            </button>
+
+            <!-- 3. Pemerintahan & Publik -->
+            <button onclick="openModal('publik')" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1 text-center group">
+                <div class="p-4 bg-emerald-50 text-emerald-600 rounded-full mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                    <i data-lucide="landmark" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Pemerintahan & Publik</h3>
+                <p class="text-xs text-gray-500 mt-1">Layanan Publik & Kominfo</p>
+            </button>
+
+            <!-- 4. E-Commerce & Retail -->
+            <button onclick="openModal('ecommerce')" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1 text-center group">
+                <div class="p-4 bg-purple-50 text-purple-600 rounded-full mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                    <i data-lucide="shopping-cart" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">E-Commerce</h3>
+                <p class="text-xs text-gray-500 mt-1">Toko Online & Toko Kartu</p>
+            </button>
+
+            <!-- 5. Perhotelan & Booking -->
+            <button onclick="openModal('booking')" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1 text-center group">
+                <div class="p-4 bg-rose-50 text-rose-600 rounded-full mb-4 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                    <i data-lucide="hotel" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Hotel & Booking</h3>
+                <p class="text-xs text-gray-500 mt-1">Sistem Reservasi & Penginapan</p>
+            </button>
+
+            <!-- 6. Kesehatan -->
+            <button onclick="openModal('kesehatan')" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1 text-center group">
+                <div class="p-4 bg-red-50 text-red-600 rounded-full mb-4 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                    <i data-lucide="heart-pulse" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Kesehatan</h3>
+                <p class="text-xs text-gray-500 mt-1">Klinik, Medis & Apotek</p>
+            </button>
+
+            <!-- 7. Organisasi & Komunitas -->
+            <button onclick="openModal('organisasi')" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1 text-center group">
+                <div class="p-4 bg-indigo-50 text-indigo-600 rounded-full mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                    <i data-lucide="users" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Organisasi & Buruh</h3>
+                <p class="text-xs text-gray-500 mt-1">Serikat Buruh & Komunitas</p>
+            </button>
+
+            <!-- 8. Media & Informasi -->
+            <button onclick="openModal('media')" class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 hover:-translate-y-1 text-center group">
+                <div class="p-4 bg-teal-50 text-teal-600 rounded-full mb-4 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                    <i data-lucide="globe" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900">Media & Informasi</h3>
+                <p class="text-xs text-gray-500 mt-1">Portal Berita & Info Online</p>
+            </button>
+
+        </div>
+    </main>
+
+    <!-- DYNAMIC MODAL BOX -->
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[85vh] flex flex-col shadow-2xl transform scale-95 transition-transform duration-300">
+            
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center px-6 py-4 border-b border-gray-100 bg-gray-50 rounded-t-2xl">
+                <h3 id="modalTitle" class="text-2xl font-bold text-gray-900">Kategori</h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 p-1 rounded-lg hover:bg-gray-200 transition-colors">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content (Grid Kartu Project) -->
+            <div id="modalBody" class="p-6 overflow-y-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Javascript akan mengisikan data kartu ke sini -->
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 flex justify-end rounded-b-2xl">
+                <button onclick="closeModal()" class="px-5 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 font-medium transition-colors">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT DATA & MAPPING -->
+    <script>
+        const projectData = {
+            pendidikan: {
+                title: "Project Pendidikan",
+                projects: [
+                    { name: "Perpus Kecamatan 3 Bogor", desc: "Sistem informasi manajemen perpustakaan wilayah berbasis web untuk mempermudah peminjaman buku.", img: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=500&auto=format&fit=crop&q=60" },
+                    { name: "Griyailmu", desc: "Platform portal pembelajaran, modul interaktif, dan manajemen data siswa.", img: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=500&auto=format&fit=crop&q=60" },
+                    { name: "Rumah Quran Khairoassyarifiyah", desc: "Aplikasi administrasi santri, tracking hafalan al-quran, dan sistem informasi internal.", img: "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=500&auto=format&fit=crop&q=60" },
+                    { name: "Pesantren As Shoheh", desc: "Website profile resmi yayasan pesantren terintegrasi dengan data pendaftaran santri baru (PPDB).", img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=500&auto=format&fit=crop&q=60" }
+                ]
+            },
+            industri: {
+                title: "Project Industri & Manufaktur",
+                projects: [
+                    { name: "Sutra Kabel", desc: "Sistem inventory, monitoring produksi, dan manajemen distribusi kabel industri.", img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&auto=format&fit=crop&q=60" },
+                    { name: "Surya Kabel", desc: "Company profile interaktif dan katalog produk digital untuk pemasaran skala B2B.", img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&auto=format&fit=crop&q=60" },
+                    { name: "Askaroseri", desc: "Aplikasi custom order manajemen perakitan dan fabrikasi bodi kendaraan (karoseri).", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&auto=format&fit=crop&q=60" }
+                ]
+            },
+            publik: {
+                title: "Project Pemerintahan & Publik",
+                projects: [
+                    { name: "Ditdal Kominfo", desc: "Sistem tracking penataan dan pengendalian data operasional dinas komunikasi dan informatika.", img: "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=500&auto=format&fit=crop&q=60" },
+                    { name: "Bogor Publik", desc: "Aplikasi integrasi layanan pengaduan dan informasi satu pintu untuk warga Bogor.", img: "https://images.unsplash.com/photo-1577017040065-650ee4d43339?w=500&auto=format&fit=crop&q=60" }
+                ]
+            },
+            ecommerce: {
+                title: "Project E-Commerce & Retail",
+                projects: [
+                    { name: "Hasanah Card Shop", desc: "Platform e-commerce penjualan produk kartu custom dengan payment gateway terintegrasi.", img: "https://images.unsplash.com/photo-1472851294608-062f824d286b?w=500&auto=format&fit=crop&q=60" }
+                ]
+            },
+            booking: {
+                title: "Project Hotel & Booking",
+                projects: [
+                    { name: "Kubooking", desc: "Engine reservasi penginapan/hotel online dengan kalender ketersediaan kamar real-time.", img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&auto=format&fit=crop&q=60" }
+                ]
+            },
+            kesehatan: {
+                title: "Project Kesehatan",
+                projects: [
+                    { name: "Health Management System", desc: "Sistem pengelolaan rekam medis digital, manajemen apotek, dan penjadwalan dokter.", img: "https://images.unsplash.com/photo-1538108149393-fdfd816d4904?w=500&auto=format&fit=crop&q=60" }
+                ]
+            },
+            organisasi: {
+                title: "Project Organisasi & Komunitas",
+                projects: [
+                    { name: "Serikat Buruh Antam", desc: "Portal advokasi, manajemen keanggotaan, dan pusat informasi internal serikat pekerja.", img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&auto=format&fit=crop&q=60" }
+                ]
+            },
+            media: {
+                title: "Project Media & Informasi",
+                projects: [
+                    { name: "Bogor Online", desc: "Portal berita lokal interaktif dengan pengelolaan CMS dinamis untuk jurnalis.", img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&auto=format&fit=crop&q=60" }
+                ]
+            }
+        };
+
+        const modal = document.getElementById('projectModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+
+        function openModal(category) {
+            const categoryData = projectData[category];
+            if (!categoryData) return;
+
+            modalTitle.innerText = categoryData.title;
+            modalBody.innerHTML = '';
+
+            categoryData.projects.forEach(project => {
+                const card = `
+                    <div class="bg-gray-50 border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <img src="${project.img}" alt="${project.name}" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg text-gray-900 mb-1">${project.name}</h4>
+                            <p class="text-sm text-gray-600 leading-relaxed">${project.desc}</p>
+                        </div>
+                    </div>
+                `;
+                modalBody.innerHTML += card;
+            });
+
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.querySelector('div').classList.remove('scale-95');
+            }, 10);
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modal.querySelector('div').classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        lucide.createIcons();
+    </script>
+
+<!-- Tombol WA Melayang (Simpan di atas tag </body>) -->
+<a href="https://wa.me/628970204545" target="_blank" class="fixed bottom-6 right-6 bg-green-600 hover:bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 transition-all transform hover:scale-110 flex items-center justify-center group" title="Hubungi Kami via WhatsApp">
+    <!-- Menggunakan SVG Logo WhatsApp Asli untuk ketajaman terbaik -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7 text-white">
+        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.9118 2.53589 15.6791 3.4735 17.1824L2 22L6.81757 20.5265C8.32087 21.4641 10.0882 22 12 22Z" fill="#FFFFFF" stroke="#FFFFFF"/>
+        <path d="M8.5 12C8.5 10.3431 9.84315 9 11.5 9V9C12.1627 9 12.8021 9.17631 13.3615 9.49757L13.8824 9.80521C14.072 9.91717 14.2831 9.98363 14.4988 10.0163C14.8872 10.0754 15.228 10.2801 15.426 10.5985C15.6599 10.9739 15.7533 11.4116 15.6946 11.8398L15.6206 12.3916C15.5458 12.9238 15.148 13.3678 14.6184 13.4893L14.0535 13.6111C13.5676 13.7169 13.1593 14.1252 13.0535 14.6111V14.6111C12.932 15.1407 12.488 15.5385 11.9558 15.6133L11.404 15.6873C10.9758 15.746 10.5381 15.6526 10.1627 15.4187C9.84433 15.2207 9.63959 14.8799 9.58052 14.4915C9.54784 14.2758 9.48138 14.0647 9.36942 13.8751L9.06178 13.3542C8.74052 12.7948 8.56421 12.1554 8.56421 11.4927V11.4927L8.5 12Z" fill="#green-600" stroke="green-600"/>
+    </svg>
+    <span class="absolute right-14 bg-gray-900 text-white text-xs px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
+        Hubungi Kami via WhatsApp
+    </span>
+</a>
+</body>
+</html>
