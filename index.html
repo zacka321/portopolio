@@ -292,8 +292,11 @@
     </section>
 
     <!-- DYNAMIC MODAL BOX -->
-    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
-        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[85vh] flex flex-col shadow-2xl transform scale-95 transition-transform duration-300">
+   <!-- DYNAMIC MODAL BOX (Fix Total Pake Scroll Container) -->
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center p-4 hidden opacity-0 transition-opacity duration-300 overflow-y-auto">
+        
+        <!-- Kontainer Utama Modal: Tingginya otomatis (h-auto), gak dikunci lagi -->
+        <div class="bg-white rounded-2xl max-w-4xl w-full my-8 flex flex-col shadow-2xl transform scale-95 transition-transform duration-300">
             
             <!-- Modal Header -->
             <div class="flex justify-between items-center px-6 py-4 border-b border-gray-100 bg-gray-50 rounded-t-2xl">
@@ -303,8 +306,8 @@
                 </button>
             </div>
 
-            <!-- Modal Content (Grid Kartu Project) -->
-            <div id="modalBody" class="p-6 overflow-y-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Modal Body: Gak usah dikasih overflow-y-auto lagi disini, biar dia nge-stretch natural -->
+            <div id="modalBody" class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Javascript akan mengisikan data kartu ke sini -->
             </div>
 
@@ -334,7 +337,7 @@
                 projects: [
                     { name: "Sutra Kabel", desc: "Sistem inventory, monitoring produksi, dan manajemen distribusi kabel industri.", img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&auto=format&fit=crop&q=60" },
                     { name: "Surya Kabel", desc: "Company profile interaktif dan katalog produk digital untuk pemasaran skala B2B.", img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&auto=format&fit=crop&q=60" },
-                    { name: "Askaroseri", desc: "Aplikasi custom order manajemen perakitan dan fabrikasi bodi kendaraan (karoseri).", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&auto=format&fit=crop&q=60" }
+                    { name: "Abkaroseri", desc: "Aplikasi custom order manajemen perakitan dan fabrikasi bodi kendaraan (karoseri).", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&auto=format&fit=crop&q=60" }
                 ]
             },
             publik: {
@@ -365,7 +368,8 @@
             organisasi: {
                 title: "Project Organisasi & Komunitas",
                 projects: [
-                    { name: "Serikat Buruh Antam", desc: "Portal advokasi, manajemen keanggotaan, dan pusat informasi internal serikat pekerja.", img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&auto=format&fit=crop&q=60" }
+                    { name: "Serikat Buruh Antam", desc: "Portal advokasi, manajemen keanggotaan, dan pusat informasi internal serikat pekerja.", img: "antam.png" },
+                    { name: "Futsal Anak Porkafa", desc: "Portal informasi dan manajemen turnamen futsal untuk komunitas anak dan sistem absensi pemain , top scorer pemain, jadwal pembayaran  .", img: "bola.png" }
                 ]
             },
             media: {
